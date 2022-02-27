@@ -1,0 +1,48 @@
+[
+    {
+    "flight_date": "2022-03-02",
+    "flight_status": "scheduled",
+    "departure": {
+    "airport": "Schiphol",
+    "timezone": "Europe/Amsterdam",
+    "iata": "AMS",
+    "icao": "EHAM",
+    "terminal": "2",
+    "gate": "9",
+    "delay": 12,
+    "scheduled": "2022-03-02T13:55:00+00:00",
+    "estimated": "2022-03-02T13:55:00+00:00",
+    "actual": "2022-03-02T14:06:00+00:00",
+    "estimated_runway": "2022-03-02T14:06:00+00:00",
+    "actual_runway": "2022-03-02T14:06:00+00:00"
+    },
+    "arrival": {
+    "airport": "Charles De Gaulle",
+    "timezone": "Europe/Paris",
+    "iata": "CDG",
+    "icao": "LFPG",
+    "terminal": "2F",
+    "gate": null,
+    "baggage": "24",
+    "delay": null,
+    "scheduled": "2022-03-02T15:15:00+00:00",
+    "estimated": "2022-03-02T15:15:00+00:00",
+    "actual": "2022-03-02T14:59:00+00:00",
+    "estimated_runway": "2022-03-02T14:59:00+00:00",
+    "actual_runway": "2022-03-02T14:59:00+00:00"
+    },
+    "airline": {
+    "name": "Air France",
+    "iata": "AF",
+    "icao": "AFR"
+    },
+    "flight": {
+    "number": "1641",
+    "iata": "AF1641",
+    "icao": "AFR1641",
+    "codeshared": null
+    },
+    "aircraft": null,
+    "live": null
+    }
+    ]
