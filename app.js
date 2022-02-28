@@ -1,6 +1,6 @@
 const express = require('express');
 const fs = require('fs');
-
+var https = require("https");
 const app = express();
 
 let flight = JSON.parse(fs.readFileSync(`${__dirname}/flight-simple.json`));
@@ -63,10 +63,14 @@ app.put('/api/v1/flights/:flight_iata/reset', (req, res)=>{
     });
 })
 
-const port=3000;
-app.listen(port, ()=>{
-console.log(`App running on Port ${port}`);
-});
+const httpsServer = https.createServer({
+    key: fs.readFileSync('/etc/letsencrypt/live/www.iexecblockchaincomputing-flightpronostics.com/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/www.iexecblockchaincomputing-flightpronostics.com/fullchain.pem'),
+  }, app);
+  
+  httpsServer.listen(443, () => {
+      console.log('HTTPS Server running on port 443');
+  });
 
 function randombetween(min, max) {  
     return Math.floor(
